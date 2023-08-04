@@ -13,7 +13,9 @@ export interface Blog {
   author: string;
   id: string;
 }
-export const blogCollectionRef = collection(db, "blogs");
+
+const collectionName = import.meta.env.VITE_API_FIREBASE_COLLECTION_NAME + "sq";
+export const blogCollectionRef = collection(db, collectionName);
 
 const getAllBlogs = async (): Promise<Blog[]> => {
   try {

@@ -6,16 +6,10 @@ const Navbar = () => {
     <nav className="flex py-4 justify-between items-center border-b-[0.1rem] border-b-secondary ">
       <h1>The Dojo Blog</h1>
       <div className="flex gap-6 ">
-        <Link
-          to={"/"}
-          className="hover:text-secondary transition-all duration-300"
-        >
+        <Link to={"/"} className="link">
           Home
         </Link>
-        <Link
-          to={"/create"}
-          className="hover:text-secondary transition-a ll duration-300"
-        >
+        <Link to={"/create"} className="link">
           New Blog
         </Link>
       </div>

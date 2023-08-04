@@ -10,14 +10,14 @@ const Home = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      try {
-        await BlogService.getAll().then((blogs) => {
+      await BlogService.getAll()
+        .then((blogs) => {
           setBlogs(blogs);
           setFilteredBlogs(blogs);
+        })
+        .catch((e) => {
+          console.error(e);
         });
-      } catch (error) {
-        console.log("Error getting data from firestore");
-      }
     };
     fetchBlogs();
   }, []);
