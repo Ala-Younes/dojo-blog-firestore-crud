@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { Blog } from "../../data";
 import toast from "react-hot-toast";
-import BlogService from "../../Services/Firebase/db";
+import BlogService, { Blog } from "../../Services/Firebase/db";
 
 interface BlogEditProps {
   blog: Blog;

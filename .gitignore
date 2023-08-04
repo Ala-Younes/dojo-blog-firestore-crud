@@ -1,26 +1,33 @@
-# Logs
-logs
+# Ignore these directories and files
+node_modules/
+dist/
+.cache/
+build/
+.out/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+*.log.*
+*.pid
+*.seed
+*.pid.lock
 
-node_modules
-data/db.json
-dist
-dist-ssr
-*.local
+# Ignore specific project files
+package-lock.json
+tsconfig.json
+tsconfig.node.json
+
+# Ignore env files
 .env
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Ignore Firebase related files
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
+
+# Ignore editor and IDE specific files
+.eslintrc.cjs
+postcss.config.js
+
+# Ignore Vite and Tailwind related files
+vite.config.ts
+tailwind.config.js

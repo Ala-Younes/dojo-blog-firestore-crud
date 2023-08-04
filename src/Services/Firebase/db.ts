@@ -7,8 +7,12 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { db } from "./firebase";
-import { Blog } from "../../../data";
-
+export interface Blog {
+  title: string;
+  body: string;
+  author: string;
+  id: string;
+}
 export const blogCollectionRef = collection(db, "blogs");
 
 const getAllBlogs = async (): Promise<Blog[]> => {

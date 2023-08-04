@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import BlogEdit from "./Edit";
-import { Blog } from "../../data";
-import BlogService from "../../Services/Firebase/db";
+import BlogService, { Blog } from "../../Services/Firebase/db";
 
 interface RouteParams {
   id: string;

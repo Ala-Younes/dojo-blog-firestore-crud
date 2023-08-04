@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Blog } from "../../data";
+import { Blog } from "../../Services/Firebase/db";
 
 interface BlogListProps {
   blogs: Blog[];

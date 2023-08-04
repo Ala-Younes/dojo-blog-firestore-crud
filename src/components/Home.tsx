@@ -1,9 +1,8 @@
 import BlogList from "./Blog/List";
 import { toast } from "react-hot-toast";
 import { useEffect, useState } from "react";
-import { Blog } from "../data";
 import AuthorFilter from "./Blog/Filter";
-import BlogService from "../Services/Firebase/db";
+import BlogService, { Blog } from "../Services/Firebase/db";
 
 const Home = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
